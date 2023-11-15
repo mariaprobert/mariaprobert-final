@@ -1,3 +1,23 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Queen Band {% endblock %}
+{% block page_description %}Queen Band{% endblock %}
+{% block content %}
+<div class="container">
+<div class="row">
+  <div class="col">
+    <h1>Band Description:</h1>
+    <p>Hempen halter mizzenmast deadlights gaff pillage starboard jack lee Blimey draught. Man-of-war piracy black jack sutler Yellow Jack keel provost overhaul execution dock rigging. Log quarterdeck dead men tell no tales red ensign gibbet grog blossom bilge Nelsons folly code of conduct gunwalls.</p>
+  </div>
+</div>
+{% for blog in blog.blogs %}
+<h2><a href="blog/{{ blog.slug }}.html">{{ blog.headline }}</a></h2> 
+<p> {{blog.date}} </p> 
+{% endfor %}
+</div>
+
+
+{% endblock %}
 <!DOCTYPE html>
 <html lang="en">
   <!-- A Intro to Coding for Journalists class project -->
@@ -43,7 +63,7 @@
     <p> By Maria Probert Hermosillo </p> 
   </div>
 </div>
-    
+
 <div class="container">
   <h1>Band Description:</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
@@ -53,8 +73,8 @@
       <div class="col-sm-6 col-lg-4">
         <div class="card mb-4 text-bg-secondary">
           <div class="card-body"> 
-        <img src="img/the-clown.jpg" alt="" class="img-fluid">
-        <h3><a href="books/the-clown.html">The Clown</a></h3>
+        <img src="img/freddie-mercury-color.jpg" alt="" class="img-fluid">
+        <h3><a href="books/the-clown.html">Freddie Mercury</a></h3>
           </div>
         </div>
      </div>
@@ -63,7 +83,7 @@
         <div class="card mb-4 text-bg-secondary">
           <div class="card-body"> 
         <img src="img/the-shipping-news.jpg" alt="" class="img-fluid">
-        <h3><a href="books/the-shipping-news.html">The Shipping News</a></h3>
+        <h3><a href="books/the-shipping-news.html">Brian May</a></h3>
           </div>
         </div>
     </div>
@@ -72,11 +92,20 @@
         <div class="card mb-4 text-bg-secondary">
           <div class="card-body"> 
         <img src="img/the-hearing-trumpet.jpg" alt="" class="img-fluid">
-        <h3><a href="books/the-hearing-trumpet.html">The Hearing Trumpet</a></h3>
+        <h3><a href="books/the-hearing-trumpet.html">John Deacon</a></h3>
       </div>
       </div>
     </div>
-    
+
+    <div class="col-sm-6 col-lg-4">
+        <div class="card mb-4 text-bg-secondary">
+          <div class="card-body"> 
+        <img src="img/the-hearing-trumpet.jpg" alt="" class="img-fluid">
+        <h3><a href="books/the-hearing-trumpet.html">Roger Taylor</a></h3>
+      </div>
+      </div>
+    </div>
+
   </div>
   <h2>Bookstores loop</h2>
   <p>This loops through data that came from a Google Sheet example.</p>
