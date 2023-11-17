@@ -6,18 +6,27 @@
 <div class="container">
   <h1> Band Description: </h1> 
   <p>Content goes here</p>
-    <h2>Band Members</h2>
+  <h2>Band Members</h2>
   <div class="row">
     {% for description in queen.members %}
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">{{ description.name }}</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+         <div class="card-body">
+          <h5 class="card-title">{{ description.name }}</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
   {% endfor %}
+  </div>
+{% for members in members.members %}
+<h2><a href="members/{{ members.slug }}.html">{{ members.name }}</a></h2> 
+{% endfor %}
+</div>
+  </div> 
 </div> 
 {% endblock %}
+
+
+

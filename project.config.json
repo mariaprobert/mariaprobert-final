@@ -1,9 +1,9 @@
 {
   "files": [
     {
-      "fileId": "1RgMhjtkXlbbf9uzSzy_xPRKwxcVZIZqVytgM_JoU4E4",
+      "fileId": "1quT2pNbTGhcAXIuLIbEzwO1e5o0t685pT6ysNENdZHk",
       "type": "doc",
-      "name": "library"
+      "name": "members"
     },
     {
       "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
@@ -24,6 +24,14 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    }
+    ,
+    {
+      "template": "bake-members",
+      "data": "members",
+      "array": "members",
+      "slug": "slug",
+      "path": "members"
     }
   ]
 }
