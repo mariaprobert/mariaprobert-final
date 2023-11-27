@@ -1,0 +1,30 @@
+{% extends '_templates/base.njk' %}
+{% set relative_path = "../" %}
+
+{% block page_title %}Discography{% endblock %}
+{% block page_description %}A list of the albums and music of Queen.{% endblock %}
+
+{% block content %}
+
+<h1> Queen Discography </h1> 
+<table class="table ">
+  {% for discography in queen.discography %}
+  <thead>
+    <tr>
+      <th scope="col-sm-6 mb-3 mb-sm-0">Title</th>
+      <th scope="col-sm-6 mb-3 mb-sm-0">Year</th>
+      <th scope="col-sm-6 mb-3 mb-sm-0">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ discography.title }}</td>
+      <td>{{ discography.year }}</td>
+      <td>
+        <img src="img/discs/{{discography.image}}" alt="Band member photo">
+      </td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+{% endblock %}
