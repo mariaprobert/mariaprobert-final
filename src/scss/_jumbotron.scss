@@ -1,7 +1,8 @@
 #jumbo {
-  background: url(../img/logos/queen-logo-black.png);
-  background-size: 18.6rem;
-  background-position-x: center;
-  padding-bottom: 20rem;
-  padding-top: 40rem;
+  background-image: url(../img/logos/queen-logo-black.png);
+  background-size: cover;
+  height: 200%;
+  width: 200%;
+  background-position: center;
+  margin: 10px;
 }

@@ -2,15 +2,20 @@
 {% block page_title %}Queen Band Description{% endblock %}
 {% block page_description %}A list of the different band members in Queen.{% endblock %}
 
+
+
 {% block content %}
 <div class="container">
+  <hr>
   <h1> Band Description: </h1> 
+  <div class="first">
   <p>This page details the legendary Queen Band members and their discography. </p>
+  </div>
   <hr>
   <h2>Band Members</h2>
   <div class="row">
   {% for members in queen.members %}
-      <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="col-sm-12 col-lg-3 col-md-6">
         <div class="card">
          <div class="card-body">
           <h2><a href="members/{{ members.slug }}.html">{{ members.name }}</a></h2> 
@@ -23,7 +28,6 @@
    {% endfor %}   
   </div>
 </div>
+
 {% endblock %}
-
-
 

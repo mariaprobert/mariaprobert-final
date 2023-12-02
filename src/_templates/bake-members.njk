@@ -10,16 +10,16 @@
   <article class="container">
     <div class="row">
       <div class="col-sm-4">
-        <img src="../img/pirate.jpg" alt="pirate character" class="img-fluid">
-        <p class="byline">By Crit McGillicutty<br>
-        <span>Island Breeze Tribune</span></p>
-        <hr class="d-sm-none">
-      </div>
-      <div class="col-sm-8">
-        <img src="../img/{{ image }}" alt="" class="img-fluid mb-4">
-        <h1>{{ name }}</h1>
+        <img src="img/members/{{ imagebw }}" alt="bw photo" class="img-fluid mb-4">
+      </div> 
+     <h1>{{ name }}</h1>
+    <div class="stuff">  
+        <h2>{{instruments}}</h2>
+        <h3>{{tenure}}</h3>
+        <h4>{{birthdate}}</h4>
+        <h5>{{birthplace}}</h5>
         {{ prose(description) }}
+    </div> 
       </div>
-    </div>
   </article>
 {% endblock %}

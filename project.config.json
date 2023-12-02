@@ -33,5 +33,13 @@
       "slug": "slug",
       "path": "members"
     }
+    ,
+    {
+      "template": "bake-members",
+      "data": "queen",
+      "array": "members",
+      "slug": "slug",
+      "path": "bandmembers"
+    }
   ]
 }
