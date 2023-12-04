@@ -1,0 +1,30 @@
+{% extends '_templates/base.njk' %}
+{% set relative_path = "../" %}
+
+{% block page_title %}Tours{% endblock %}
+{% block page_description %}A list of Queen tours, including date and venues.{% endblock %}
+
+{% block content %}
+<div class="container">
+<h1> Queen Tours </h1> 
+<hr>
+<table class="table ">
+  {% for tour in queen.tour %}
+  <thead>
+    <tr>
+      <th scope="col-sm-6 mb-3 mb-sm-0">Date</th>
+      <th scope="col-sm-6 mb-3 mb-sm-0">City</th>
+      <th scope="col-sm-6 mb-3 mb-sm-0">Venue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ tour.date }}</td>
+      <td>{{ tour.city }}</td>
+      <td>{{ tour.venue }}</td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+</div>
+{% endblock %}
