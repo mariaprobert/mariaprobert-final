@@ -9,16 +9,16 @@
 {% block content %}
   <article class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <img src="../img/members{{members.imagebw}}.jpg" alt="bw photo" class="img-fluid mb-4">
+      <div class="thing col-sm-4 col-md-6">
+        <img src= "../img/members/{{imagebw}}" alt="bw photo" class="img-fluid mb-4">
       </div> 
      <h1>{{ name }}</h1>
-    <div class="stuff">  
+    <div class= "col-sm-8 col-md-6">  
         <h2>{{instruments}}</h2>
         <h3>{{tenure}}</h3>
         <h4>{{birthdate}}</h4>
         <h5>{{birthplace}}</h5>
-        {{ prose(description) }}
+        {{ description | safe  }}
     </div> 
       </div>
   </article>

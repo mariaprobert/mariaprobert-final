@@ -28,18 +28,10 @@
     ,
     {
       "template": "bake-members",
-      "data": "members",
-      "array": "members",
-      "slug": "slug",
-      "path": "members"
-    }
-    ,
-    {
-      "template": "bake-members",
       "data": "queen",
       "array": "members",
       "slug": "slug",
-      "path": "bandmembers"
+      "path": "members"
     }
   ]
 }
